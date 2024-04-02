@@ -1,0 +1,132 @@
+body {
+  color: black;
+  background: lightgray;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6, 
+p {
+  margin-top: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  background-color: pink;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.link {
+  color: darkgray;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color .3s;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: crimson;
+}
+
+.link.active {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+img {
+  
+  gap: 150px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+} 
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 60px;
+  justify-content: space-around;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.hero {
+  margin-top: 100px;
+  display: flex;
+  
+}
+span {
+  color: green;
+}
+.hero-section__container {
+  display: flex;
+  gap:50px;
+}
+.hero-section__content {
+  width: 400px;
+  margin-top: 250px;
+  
+} 
+.hero-section__image {
+  width: 100%;
+  max-width: 770px;
+} 
+.hero-section title {
+  width: 50%;
+}
+
+
+.contacts-img {
+  width: 100%;
+  max-width: 750px;
+}

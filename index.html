@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Test</title>
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+       <div class="header-container">
+         <nav class="header__nav">
+          
+           <a href="/">
+              <img src="./img/logo1.svg" alt="Лого">
+           </a>
+               
+           <ul class="header-menu">
+           
+             <li><a class="link active"  href="#main">главная</a></li>
+             <li><a class="link" href="#gallery">галерея</a></li>
+             <li><a class="link" href="#projects">проекты</a></li>
+             <li><a class="link" href="#certificates">сертификаты</a></li>
+             <li><a class="link" href="#contacts">контакты</a></li>
+           </ul>
+         </nav>
+  </header>
+<main>
+  <section class="hero-section hero">
+    <div class="container">
+      <div class="hero-section__container">
+        <div class="hero-section__content">
+          <h1 class="hero-section__title">
+            <span class="text-brand">Project</span> <br>home
+          </h1>
+          <h3>arrows</h3>
+          <h4>numbers</h4>
+
+        </div>
+        
+        <img class="hero-section__image" src="./img/hero.png" alt="">
+        <!-- <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button> -->
+      </div>
+      
+
+    </div>
+  </section> 
+
+  <section class="about">
+    <div class="container">
+      <div class="gallery"></div>
+      <div class="about-content">
+        <h3 class="title">О компании</h3>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and
+           typesetting industry. Lorem Ipsum has been the 
+           industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and
+             scrambled it to make a type specimen book. It has 
+             survived not only five centuries, but also the leap into 
+             electronic typesetting, remaining essentially unchanged.</p>
+             <button>читать</button>
+        </div>
+    </div>
+
+  </section>
+
+  <section class="tasks">
+    <div class="container">
+      <h3 class="task-title">Основные задачи</h3>
+      <div class="task-content">
+        <div class="first-task">
+          <div class="img-first">1</div>
+          <div class="text-first">Создание комфортных 
+            условий и повышение 
+            качества обслуживания 
+            клиентов</div>
+        </div>
+        <div class="second-task">
+          <div class="img-second">2</div>
+          <div class="text-second">Постоянно совершенствовать качество 
+            предоставляемых услуг путем обучения 
+            персонала, закупки нового оборудования 
+            и усиленной рекламы на рынке</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h3 class="projects-title">Наши проекты</h3>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <h3 class="contacts-title">Связаться с нами</h3>
+      
+    <section class="contact-section section" id="contacts-section">
+      <div class="container">
+       <div class="contact-section__container">
+        <div class="contact-section__form">
+       
+      
+      <form name="contact-section__form"  autocomplete="off">
+        <div class="contact-section__form-field input">
+          <label class="input__label visually-hidden" for="user-name">Имя</label>
+        <input 
+          class="input__control" 
+          type="text" 
+          id="user-name" 
+          name="user-name" 
+          placeholder="Ім’я"
+          required
+          />
+        </div>
+        
+        <div class="contact-section__form-field input">
+          <label class="input__label visually-hidden" for="user-tel">
+            Номер телефона
+          </label>
+        <input 
+          class="input__control" 
+          type="tel" 
+          id="user-tel" 
+          name="user-tel" 
+          placeholder="Телефон"
+          required
+          />
+        </div>
+
+        <div class="contact-section__form-field input">
+          <label class="input__label visually-hidden" for="user-email">
+            E-mail
+          </label>
+        <input 
+            class="input__control" 
+            type="email" 
+            id="user-email" 
+            name="user-email"
+            placeholder="Електронна пошта"
+            required
+            />
+            
+        </div> 
+        <div class="contact-section__form-field input">
+          <label class="input__label visually-hidden" for="user-email">
+            Интересующий товар/услуга
+          </label>
+        <input 
+            class="input__control" 
+            type="email" 
+            id="user-email" 
+            name="user-email"
+            placeholder="Интересующий товар/услуга"
+            required
+            />
+            
+        </div> 
+  
+        <button class="contact-section__button button" type="submit">
+          Отправить
+        </button>
+        <p class="form-terms">
+          Отправляя заявку Вы соглашаетесь
+          с политикой 
+         конфиденциальности
+          <a class="form-terms__link" ref="#">з
+             політикою конфіденційності</a>
+        </p>
+      </form>
+      </div>
+      <div class="contacts-img">
+         <img src="./img/contacts.jpg" alt="">
+      </div>
+
+      
+    </div>
+  </section>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
