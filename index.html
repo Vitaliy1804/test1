@@ -11,10 +11,10 @@
    <header class="header">
       <div class="container">
        <div class="header-container">
-         <nav class="header__nav">
+         <nav class="header-nav">
           
            <a href="/">
-              <img src="./img/logo1.svg" alt="Лого">
+              <img class="header-logo" src="./img/logo1.svg" alt="Лого">
            </a>
                
            <ul class="header-menu">
@@ -32,16 +32,23 @@
     <div class="container">
       <div class="hero-section__container">
         <div class="hero-section__content">
-          <h1 class="hero-section__title">
-            <span class="text-brand">Project</span> <br>home
-          </h1>
-          <h3>arrows</h3>
-          <h4>numbers</h4>
+          <div class="hero-section__title">
+            <h1 class="text-brand"><span>Project</span> <br>
+            home<h1></h1>
+            </div>
+          <div class="arrows-container">
+            <img class="arrow-left" src="./img/arrow.svg" alt="arrow-left">
+            <img class="arrow-right" src="./img/arrow.svg" alt="arrow-right">
+          </div>
+          <p class="numbers">01 / 02</h4>
 
         </div>
+        <div class="hero-section-img-container">
+          <img class="hero-section__image" src="./img/hero.png" alt="">
+          <button class="hero-section-button" type="button">ВЗГЛЯНУТЬ &rarr;</button>
+        </div>
         
-        <img class="hero-section__image" src="./img/hero.png" alt="">
-        <!-- <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button> -->
+        
       </div>
       
 
@@ -50,18 +57,29 @@
 
   <section class="about">
     <div class="container">
-      <div class="gallery"></div>
-      <div class="about-content">
-        <h3 class="title">О компании</h3>
-        <p class="text">Lorem Ipsum is simply dummy text of the printing and
-           typesetting industry. Lorem Ipsum has been the 
-           industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and
-             scrambled it to make a type specimen book. It has 
-             survived not only five centuries, but also the leap into 
-             electronic typesetting, remaining essentially unchanged.</p>
-             <button>читать</button>
+      <div class="about-container">
+        <div class="gallery-wrapper">
+          <div class="gallery">
+            <img class="gallery-one" src="./img/about1.jpg" alt="">
+            <img class="gallery-three" src="./img/about3.jpg" alt="">
+            <img class="gallery-two" src="./img/about2.jpg" alt="">
+            
+          </div>
         </div>
+       
+        <div class="about-content">
+          <h3 class="title">О компании</h3>
+          <p class="text">Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the 
+             industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has 
+               survived not only five centuries, but also the leap into 
+               electronic typesetting, remaining essentially unchanged.</p>
+               <button>читать &rarr;</button> 
+          </div>
+      </div>
+     
     </div>
 
   </section>
@@ -92,28 +110,49 @@
   <section class="projects">
     <div class="container">
       <h3 class="projects-title">Наши проекты</h3>
-    </div>
+      <div class="projects-container">
+
+       <div class="black-container">
+        <img class="black" src="./img/project1.png" alt="">
+        <div class="projects-content">
+          <div class="project-text">ДОСУГОВЫЙ
+            ЦЕНТР</div>
+            <div class="butt">ПОДРОБНЕЕ &rarr;</div>
+        </div>
+      </div>
+        
+        <img src="./img/project2.png" alt="">
+        <img src="./img/project3.png" alt="">
+        <img src="./img/project4.png" alt="">
+        <img src="./img/project5.png" alt="">
+        <div class="button-wrapper">
+          <button class="project-button button">ВСЕ ПРОЕКТЫ &rarr;</button>
+        </div>
+      </div>
+      </div>
+      
+    
   </section>
 
   <section class="contacts">
     <div class="container">
       <h3 class="contacts-title">Связаться с нами</h3>
       
-    <section class="contact-section section" id="contacts-section">
-      <div class="container">
+
+
        <div class="contact-section__container">
         <div class="contact-section__form">
        
       
       <form name="contact-section__form"  autocomplete="off">
-        <div class="contact-section__form-field input">
+        <div class="contact-section__form-field ">
           <label class="input__label visually-hidden" for="user-name">Имя</label>
         <input 
           class="input__control" 
           type="text" 
           id="user-name" 
           name="user-name" 
-          placeholder="Ім’я"
+          placeholder="Имя"
           required
           />
         </div>
@@ -141,14 +180,14 @@
             type="email" 
             id="user-email" 
             name="user-email"
-            placeholder="Електронна пошта"
+            placeholder="E-mail"
             required
             />
             
         </div> 
         <div class="contact-section__form-field input">
           <label class="input__label visually-hidden" for="user-email">
-            Интересующий товар/услуга
+            товар
           </label>
         <input 
             class="input__control" 
@@ -160,30 +199,119 @@
             />
             
         </div> 
-  
+
+      
+            <textarea 
+            class="input__control" 
+            id="user-text" 
+            name="user-area" 
+            rows="9" 
+            cols=""
+            placeholder=" Сообщение*"
+            >Сообщение*
+            </textarea>
+
+            <div class="form-terms">
+              <img class="form-terms__check" src="./img/tick.svg" alt="">
+              <p class="form-terms__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+  </p>
+            </div>
         <button class="contact-section__button button" type="submit">
-          Отправить
+          Отправить &rarr;
         </button>
-        <p class="form-terms">
-          Отправляя заявку Вы соглашаетесь
-          с политикой 
-         конфиденциальности
-          <a class="form-terms__link" ref="#">з
-             політикою конфіденційності</a>
-        </p>
+        
       </form>
       </div>
       <div class="contacts-img">
          <img src="./img/contacts.jpg" alt="">
       </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="./img/footer-logo.png" alt="logo">
+          </a>
+        </div>
+        <ul class="footer__menu">Информация
+          <li><a class="link" href="#chefs-section">Главная</a></li>
+          <li><a class="link" href="#formats-section">Галерея</a></li>
+          <li><a class="link" href="#contacts-section">Проекты</a></li>
+          <li><a class="link" href="#contacts-section">Сертификаты</a></li>
+          <li><a class="link" href="#contacts-section">Контакты</a></li>
+        </ul>
+      </nav>
+      <address class="footer__address">
+        <div class="footer__address-contacts">
+          <ul class="footer__address-list">Контакты
+            <li><a class="footer__address-link" target="_blank">
+              100000, Республика  Казахстан, <br>
+г. Караганда, ул. Телевизионная 10
+            </a>
+          </li>
+            <li><a class="footer__address-link" href="tel:+380960000007">+ 38 (000) 000 00 00</a></li>
+            <li><a class="footer__address-link" href="mailto:">mail@gmail.com</a></li>
+            
+         
+          </ul>
+          
+          <div class="social-container">Социальные сети
+
+          <ul class="footer__address-container">
+            
+            <li>
+              <a href="#">
+              <img src="/img/facebook.svg" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+              
+                  <img src="/img/twitter.svg" alt="facebook">
+                
+              </a>
+            </li>
+
+            <li>
+            <a href="#">
+      
+                <img src="/img/linkedin.svg" alt="facebook">
+                
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+      
+                <img src="/img/pint.svg" alt="facebook">
+                
+            </a>
+          </li>
+
+          
+        </ul>
+      </div>
+        </div>
+        
+      
+      </address>
 
       
     </div>
-  </section>
-</main>
 
-<footer>
+    <div class="footer__address-info">
+      
+      <p class="footer__address-copyright">&copy; 2019 Digital Project. Все права защищены.</p>
+    </div>
+  </div>
+</footer>  
 
-</footer>
+
 </body>
 </html>
