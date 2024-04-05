@@ -19,16 +19,16 @@
                
            <ul class="header-menu">
            
-             <li><a class="link active"  href="#main">главная</a></li>
-             <li><a class="link" href="#gallery">галерея</a></li>
-             <li><a class="link" href="#projects">проекты</a></li>
-             <li><a class="link" href="#certificates">сертификаты</a></li>
+             <li><a class="link active" href="#hero-section">главная</a></li>
+             <li><a class="link" href="#about">галерея</a></li>
+             <li><a class="link" href="#tasks">проекты</a></li>
+             <li><a class="link" href="#projects">сертификаты</a></li>
              <li><a class="link" href="#contacts">контакты</a></li>
            </ul>
          </nav>
   </header>
 <main>
-  <section class="hero-section hero">
+  <section class="hero-section hero" id="hero-section">
     <div class="container">
       <div class="hero-section__container">
         <div class="hero-section__content">
@@ -40,11 +40,16 @@
             <img class="arrow-left" src="./img/arrow.svg" alt="arrow-left">
             <img class="arrow-right" src="./img/arrow.svg" alt="arrow-right">
           </div>
-          <p class="numbers">01 / 02</h4>
+          <!-- <p class="numbers">01 / 02</h4> -->
+            <div class="numbers">
+              <div class="first-number">01</div>
+              <span></span>
+              <div class="second-number">02</div>
+            </div>
 
         </div>
         <div class="hero-section-img-container">
-          <img class="hero-section__image" src="./img/hero.png" alt="">
+          <!-- <img class="hero-section__image" src="./img/hero.png" alt=""> -->
           <button class="hero-section-button" type="button">ВЗГЛЯНУТЬ &rarr;</button>
         </div>
         
@@ -55,7 +60,7 @@
     </div>
   </section> 
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about-container">
         <div class="gallery-wrapper">
@@ -76,7 +81,7 @@
                scrambled it to make a type specimen book. It has 
                survived not only five centuries, but also the leap into 
                electronic typesetting, remaining essentially unchanged.</p>
-               <button>читать &rarr;</button> 
+               <button class="about-button" type="button">ЧИТАТЬ &rarr;</button> 
           </div>
       </div>
      
@@ -84,7 +89,7 @@
 
   </section>
 
-  <section class="tasks">
+  <section class="tasks" id="tasks">
     <div class="container">
       <h3 class="task-title">Основные задачи</h3>
       <div class="task-content">
@@ -107,7 +112,7 @@
     
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <h3 class="projects-title">Наши проекты</h3>
       <div class="projects-container">
@@ -134,7 +139,7 @@
     
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <h3 class="contacts-title">Связаться с нами</h3>
       
@@ -166,7 +171,7 @@
           type="tel" 
           id="user-tel" 
           name="user-tel" 
-          placeholder="Телефон"
+          placeholder="Номер телефона*"
           required
           />
         </div>
@@ -180,7 +185,7 @@
             type="email" 
             id="user-email" 
             name="user-email"
-            placeholder="E-mail"
+            placeholder="E-mail*"
             required
             />
             
@@ -238,29 +243,35 @@
             <img src="./img/footer-logo.png" alt="logo">
           </a>
         </div>
-        <ul class="footer__menu">Информация
-          <li><a class="link" href="#chefs-section">Главная</a></li>
-          <li><a class="link" href="#formats-section">Галерея</a></li>
-          <li><a class="link" href="#contacts-section">Проекты</a></li>
-          <li><a class="link" href="#contacts-section">Сертификаты</a></li>
-          <li><a class="link" href="#contacts-section">Контакты</a></li>
+        <ul class="footer__menu">
+          <h5 class="footer__address-title">Информация</h5>
+          <li><a class="link" href="#hero-section">Главная</a></li>
+          <li><a class="link" href="#about">Галерея</a></li>
+          <li><a class="link" href="#tasks">Проекты</a></li>
+          <li><a class="link" href="#projects">Сертификаты</a></li>
+          <li><a class="link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <address class="footer__address">
         <div class="footer__address-contacts">
-          <ul class="footer__address-list">Контакты
-            <li><a class="footer__address-link" target="_blank">
-              100000, Республика  Казахстан, <br>
-г. Караганда, ул. Телевизионная 10
-            </a>
-          </li>
-            <li><a class="footer__address-link" href="tel:+380960000007">+ 38 (000) 000 00 00</a></li>
-            <li><a class="footer__address-link" href="mailto:">mail@gmail.com</a></li>
+          <ul class="footer__address-list">
+            <h5 class="footer__address-title">Контакты</h5>
+            <li><a class="footer__address-link"  target="_blank">
+              <img src="./img/map.svg" alt="map">
+              100000, Республика  Казахстан, <br> г. Караганда, ул. Телевизионная 10</a></li>
+            <li><a class="footer__address-link" href="tel:+380960000007">
+              <img src="./img/ephone.svg" alt="phone">
+              + 38 (000) 000 00 00</a></li>
+            <li><a class="footer__address-link" href="mailto:">
+              <img src="./img/email.svg" alt="mail">
+              mail@gmail.com</a></li>
             
          
           </ul>
           
-          <div class="social-container">Социальные сети
+          <div class="social-container">
+            <h5 class="footer__address-title">Социальные сети</h5>
+            
 
           <ul class="footer__address-container">
             
